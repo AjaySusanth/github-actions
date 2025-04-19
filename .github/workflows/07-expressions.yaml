@@ -1,6 +1,6 @@
 name: 07 - Using Expressions
+run-name: 07 - Using expressions | debug - ${{inputs.debug && 'ON' || 'OFF'}}
 on:
-    push:
     workflow_dispatch:
         inputs:
             debug:
@@ -22,4 +22,4 @@ jobs:
               run: echo "I was triggered from main"
             - name: Greeting
               run: echo "Hello world"
-              
+
